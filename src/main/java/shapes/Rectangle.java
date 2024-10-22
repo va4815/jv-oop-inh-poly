@@ -8,7 +8,7 @@ public class Rectangle extends Shape{
         this.width = width;
     }
     @Override
-    public void calculateArea() {
-
+    public double calculateArea() {
+        return this.length*this.width;
     }
 }

@@ -8,7 +8,7 @@ public class Triangle extends Shape{
         this.height = height;
     }
     @Override
-    public void calculateArea() {
-
+    public double calculateArea() {
+        return (this.base*this.height)/2;
     }
 }
