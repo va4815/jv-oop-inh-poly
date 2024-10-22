@@ -8,6 +8,7 @@ public class Cylinder extends Shape3D{
     }
     @Override
     public double calculateVolume() {
-        return 0;
+
+        return base.calculateArea()*height;
     }
 }
