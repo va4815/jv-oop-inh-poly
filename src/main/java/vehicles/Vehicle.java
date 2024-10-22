@@ -1,8 +1,8 @@
 package vehicles;
 
 public abstract class Vehicle {
-    private String make;
-    private String model;
+    protected String make;
+    protected String model;
     private double speed;
     protected Engine engine;
 
@@ -10,4 +10,20 @@ public abstract class Vehicle {
         this.make = make;
         this.model = model;
     }
+
+    public void start() {
+        this.engine.start();
+        System.out.println(make + " " + model + " is starting.");
+    }
+
+    public void drive() {
+        if (!engine.isRunning()) {
+            System.out.println(make + " " + model + " is not running.");
+        } else {
+            System.out.println("I am driving " + make + " " + model + ".");
+        }
+    }
+
+    protected abstract void accelerate();
+
 }

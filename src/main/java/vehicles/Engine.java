@@ -9,4 +9,20 @@ public class Engine {
         this.horsepower = horsepower;
         this.fuelType = fuelType;
     }
+
+    public void start() {
+        this.running = true;
+    }
+
+    public boolean isRunning() {
+        return running;
+    }
+
+    public FuelType getFuelType() {
+        return fuelType;
+    }
+
+    public int getHorsepower() {
+        return horsepower;
+    }
 }
