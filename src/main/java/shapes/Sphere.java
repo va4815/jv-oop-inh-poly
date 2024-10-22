@@ -7,7 +7,7 @@ public class Sphere extends Shape3D{
     }
     @Override
     public double calculateVolume() {
-
-        return 0;
+        Circle circle = (Circle) this.base;
+        return circle.calculateArea() * circle.radius * (4.0/3);
     }
 }
